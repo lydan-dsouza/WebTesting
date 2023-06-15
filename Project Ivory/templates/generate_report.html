@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TITLE TECHNOLOGY - PROJECT IVORY</title>
+    <!-- Add your CSS styles here -->
+</head>
+<body>
+    <h1>TITLE TECHNOLOGY - PROJECT IVORY</h1>
+    <div class="container">
+        <h2>Generate Report</h2>
+        {% if success_message %}
+            <div class="success">{{ success_message }}</div>
+        {% endif %}
+        <form method="POST" action="/generate_report">
+            <input type="text" name="website_link" placeholder="Website Link" required><br>
+            <button type="submit" class="btn">Generate</button>
+        </form>
+    </div>
+</body>
+</html>

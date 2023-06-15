@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TITLE TECHNOLOGY - PROJECT IVORY</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">TITLE TECHNOLOGY - PROJECT IVORY</h1>
+        <div class="start-content">
+            <h2 class="subtitle">Welcome to Project Ivory</h2>
+            <p class="description">This is a web testing application developed by TITLE TECHNOLOGY.</p>
+            <p class="description">Please select an option:</p>
+            <ul class="options">
+                <li><a href="{{ url_for('register') }}">Register</a></li>
+                <li><a href="{{ url_for('login') }}">Login</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
+
